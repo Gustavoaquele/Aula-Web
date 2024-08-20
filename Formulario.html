@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { width: 50%; margin: auto; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; }
+        .form-group input, .form-group textarea { width: 100%; padding: 8px; box-sizing: border-box; }
+        .form-group button { padding: 10px 15px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário</h1>
+      
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco">
+            </div>
+            <div class="form-group">
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade">
+            </div>
+            <div class="form-group">
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado">
+            </div>
+            <div class="form-group">
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep">
+            </div>
+            <div class="form-group">
+                <label for="pais">País:</label>
+                <input type="text" id="pais" name="pais">
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="sexo">Sexo: </label>
+                  <div class="col-md-4">
+                  <div class="radio">
+                  <label for="sexo-0">
+                  <input type="radio" name="sexo" id="sexo-0" value="1" checked="checked">
+                  Masculino
+                </label>
+            </div>
+          <div class="radio">
+                <label for="sexo-1">
+              <input type="radio" name="sexo" id="sexo-1" value="2">
+              Feminino
+                </label>
+              </div>
+             </div>
+           </div>
+	    <div class="form-group">
+          <label class="col-md-4 control-label" for="nivelEscolar">Nível Escolar</label>
+          <div class="col-md-4">
+            <select id="nivelEscolar" name="nivelEscolar" class="form-control">
+              <option value="1">Fundamental Incompleto</option>
+              <option value="2">Fundamental Completo</option>
+              <option value="">Ensino Médio Incompleto</option>
+              <option value="">Ensino Médio Completo</option>
+              <option value="">Graduação Incompleto</option>
+              <option value="">Graduação Completo</option>
+            </select>
+          </div>
+          </div>
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
